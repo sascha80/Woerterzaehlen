@@ -14,9 +14,9 @@ public class WordCounter {
 				int sentenceCount = countSentences(text);
 				
 				
-				System.out.println("Dein Text besteht aus" + wordCount + "Wörtern.");
-				System.out.println("Außerdem enthält er" + charCount + "Zeichen.");
-				System.out.println("Sowie" + sentenceCount + "Sätze.");
+				System.out.println("Dein Text besteht aus " + wordCount + " Wörtern.");
+				System.out.println("Außerdem enthält er " + charCount + " Zeichen.");
+				System.out.println("Sowie " + sentenceCount + " Sätze.");
 				
 	}
 	
@@ -27,6 +27,18 @@ public class WordCounter {
 		String[] words = text.trim().split("\\s+");
 		return words.length;
 	}
-	
+	public static int countChars(String text) {
+		if (text == null || text.isEmpty()) {
+			return 0;
+		}
+		return text.length();
+	}
+	public static int countSentences(String text) {
+		if (text == null || text.isEmpty()) {
+			return 0;
+		}
+		String[] sentences = text.split("[.!?]");
+		return sentences.length;
+	}
 
 }
