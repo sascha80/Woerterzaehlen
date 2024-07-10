@@ -5,9 +5,20 @@
 package com.sascha80.wordcounter;
 
 import java.util.Scanner;
-
+/**
+ * Hier beginnt die Hauptklasse "WordCounter"
+ * Die Hauptklasse (main class) wird in der Regel in der Datei mit dem selben Namen der Klasse gespeichert !!!
+ */
 public class WordCounter {
-
+/** Beginn der main Methode.
+ *  Erstellen eines Scanner Objekts welches Benutzereingaben von der Konsole liest.
+ *  Try finally Block stellt sicher das der Scanner geschlossen wird.
+ *  System.out.println ( fordert den Benutzer zur daten eingabe auf.
+ *  	scanner.nextline() liest alle zeichen der Benutzereingabe ein.
+ *  Aufruf der Methoden ( countWords, countChars, countSentences) zur ermittlung der Anzahl von Woertern, Zeichen sowie Sätze.
+ *  System.out.println gibt die ermittelten werte aus.
+ * @param args
+ */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
@@ -25,7 +36,12 @@ public class WordCounter {
             scanner.close();
         }
     }
-
+/**
+ *  Methoden zum Zählen der Zeichen im text
+ * @param text (Der zu Analysierende text)
+ * @return ( Anzahl der Woerter, Zeichen, Sätze )
+ *  Ausgabe der ermittelten Werte bzw 0 sollten keine vorhanden sein
+ */
     public static int countWords(String text) {
         if (text == null || text.isEmpty()) {
             return 0;
