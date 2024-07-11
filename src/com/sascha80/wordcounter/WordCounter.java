@@ -1,4 +1,3 @@
-
 /** package com.sascha80.wordcounter zeigt auf das Paket zu welchem die Klasse (class) WordCounter gehört.
  *  Java.util.Scanner Importiert die Scanner Klasse aus dem Paket java.util, wir benötigen sie für die Benutzereingabe.
  */
@@ -16,7 +15,7 @@ public class WordCounter {
  *  System.out.println ( fordert den Benutzer zur daten eingabe auf.
  *  	scanner.nextline() liest alle zeichen der Benutzereingabe ein.
  *  Aufruf der Methoden ( countWords, countChars, countSentences) zur ermittlung der Anzahl von Woertern, Zeichen sowie Sätze.
- *  System.out.println gibt die ermittelten werte aus.
+ *  System.out.println gibt die ermittelten Werte aus.
  * @param args
  */
     public static void main(String[] args) {
