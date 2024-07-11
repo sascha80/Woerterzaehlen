@@ -62,5 +62,6 @@ public class WordCounter {
         }
         String[] sentences = text.split("[.!?]");
         return sentences.length;
+        
     }
 }
