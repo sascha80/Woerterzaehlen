@@ -1,9 +1,14 @@
 /** package com.sascha80.wordcounter zeigt auf das Paket zu welchem die Klasse (class) WordCounter gehört.
  *  Java.util.Scanner Importiert die Scanner Klasse aus dem Paket java.util, wir benötigen sie für die Benutzereingabe.
+ *  com.sascha80.gui.MainWindow import der neuen klasse für die grafische Benutzeroberfläche
  */
+
+
 package com.sascha80.wordcounter;
 
 import java.util.Scanner;
+
+
 /**
  * Hier beginnt die Hauptklasse "WordCounter"
  * Die Hauptklasse (main class) wird in der Regel in der Datei mit dem selben Namen der Klasse gespeichert !!!
